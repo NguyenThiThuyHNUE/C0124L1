@@ -14,32 +14,61 @@
     div {
         margin-left: 10px;
     }
+    .buy:hover {
+        background-color: sandybrown;
+    }
+    p {
+        display: none;
+    }
+    .dolar input::after{
+        display: block;
+    }
 </style>
 <body>
-    <form>
+    <form name="" action="" >
         <div>
             <h1>Oder Form</h1>
-            <label for="">what would you like to buy?</label> <br>
-            <select name="" id="">
-                <option value="1">A</option>
-                <option value="2">B</option>
-            </select> <br> <br>
-    
+            <div class="buy">
+                <label for="">what would you like to buy?</label> <br>
+                <select name="" id="">
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                </select> <br> <br>
+            </div>
+        
             <label for="order">How many woudl you like to order?</label> <br>
             <input type="radio" name="order" checked> <span>1-$10</span> <br>
             <input type="radio" name="order"> <span>2-$20</span> <br>
-            <input type="radio" name="order"> <span>3-$25</span> <br> <br>
+            <div class="dolar">
+                <input type="radio" name="order"> <span>3-$25</span>
+                <p>maximum</p>
+            </div>
+             <br> <br>
+
+            <label for="where">Where woudl you like to buy?</label> <br>
+            <input type="checkbox" name="place"> <span>HN</span>
+            <input type="checkbox" name="place"> <span>HCM</span>
+            <input type="checkbox" name="place"> <span>DN</span>
+            <input type="checkbox" name="place"> <span>Hue</span>
+            <input type="checkbox" name="place"> <span>QT</span> <br> <br>
     
             <label for="">Name*</label> <br>
             <input type="text" placeholder="Firstname" style="width: 35%;"> <input type="text" placeholder="LastName" style="width: 35%;"> <br><br>
     
             <label for="email">Email</label> <br>
-            <input type="text" id="email" style="width: 75%;"> <br><br>
+            <input type="email" id="email" style="width: 75%;"> <br><br>
     
             <label for="">Phone</label> <br>
-            <input type="text" style="width: 20%;"> - <input type="text" style="width: 20%;"> - <input type="text" style="width: 20%;"> <br><br>
+            <input type="number" style="width: 20%;"> - <input type="number" style="width: 20%;"> - <input type="number" style="width: 20%;"> <br><br>
     
-            <button>Submit</button>
+            <label for="pass">Password</label> <br>
+            <input type="password" id="pass" style="width: 75%;"> <br><br>
+
+            <label for="op">Opinion</label> <br>
+            <textarea name="" id="" cols="20" rows="10"></textarea> <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Delete</button>
         </div>
     </form>
 </body>
