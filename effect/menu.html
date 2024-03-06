@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cap2, .cap3 {
+        display: none;
+    }
+    .cap13:hover .cap2 {
+        display: block;
+    }
+    .cap23:hover .cap3 {
+        display: block;
+    }
+    .cap13 {
+        position: relative;
+    }
+    .cap2 {
+        position: absolute;
+        left: 2%;
+        top: 3%;
+    }
+    .cap23 {
+        position: relative;
+    }
+    .cap3 {
+        position: absolute;
+        top:30%;
+        left: 40%;
+    }
+</style>
+<body>
+    <ul class="cap1">
+        <li>cap 1</li>
+        <li>cap 1</li>
+        <li class="cap13">cap 1
+            <ul class="cap2">
+                <li>cap 2</li>
+                <li>cap 2</li>
+                <li class="cap23">cap 2
+                    <ul class="cap3">
+                        <li>Cap 3</li>
+                        <li>Cap 3</li>
+                    </ul>
+                </li>
+                <li>cap 2</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
